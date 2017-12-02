@@ -16,6 +16,7 @@ group :production do
 end
 
 group :development do
+	gem 'listen'
   gem 'pry-rails'         # Debugging
   gem 'mina', '~> 0.3.8'  # Deploy tool
   gem 'better_errors'     # Better error pages
