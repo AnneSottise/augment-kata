@@ -1,0 +1,58 @@
+.no-margin        { margin:        0 !important; }
+.no-top-margin    { margin-top:    0 !important; }
+.no-bottom-margin { margin-bottom: 0 !important; }
+.no-side-margin   { margin-left:   0 !important; margin-right: 0 !important; }
+
+.no-top-margin     { margin-top: 0 !important; }
+.single-top-margin { margin-top: 10px !important; }
+.double-top-margin { margin-top: 20px !important; }
+.triple-top-margin { margin-top: 30px !important; }
+.quad-top-margin   { margin-top: 40px !important; }
+.octave-top-margin { margin-top: 80px !important; }
+
+.no-bottom-margin     { margin-bottom: 0 !important; }
+.single-bottom-margin { margin-bottom: 10px !important; }
+.double-bottom-margin { margin-bottom: 20px !important; }
+.triple-bottom-margin { margin-bottom: 30px !important; }
+.quad-bottom-margin   { margin-bottom: 40px !important; }
+.octave-bottom-margin { margin-bottom: 80px !important; }
+
+.no-left-margin     { margin-left: 0px !important; }
+.single-left-margin { margin-left: 10px !important; }
+.double-left-margin { margin-left: 20px !important; }
+.triple-left-margin { margin-left: 30px !important; }
+.quad-left-margin   { margin-left: 40px !important; }
+
+.no-right-margin     { margin-right: 0px !important; }
+.single-right-margin { margin-right: 10px !important; }
+.double-right-margin { margin-right: 20px !important; }
+.triple-right-margin { margin-right: 30px !important; }
+.quad-right-margin   { margin-right: 40px !important; }
+
+.no-padding        { padding:        0 !important; }
+.no-top-padding    { padding-top:    0 !important; }
+.no-bottom-padding { padding-bottom: 0 !important; }
+.no-side-paddings  { padding-left:   0 !important; padding-right: 0 !important; }
+.small-padding     { padding:        1px !important; }
+
+.single-padding { padding: 10px; }
+
+.single-top-padding { padding-top: 10px !important; }
+.double-top-padding { padding-top: 20px !important; }
+.triple-top-padding { padding-top: 30px !important; }
+.quad-top-padding   { padding-top: 40px !important; }
+
+.single-bottom-padding { padding-bottom: 10px !important; }
+.double-bottom-padding { padding-bottom: 20px !important; }
+.triple-bottom-padding { padding-bottom: 30px !important; }
+.quad-bottom-padding   { padding-bottom: 40px !important; }
+
+.single-left-padding { padding-left: 10px !important; }
+.double-left-padding { padding-left: 20px !important; }
+.triple-left-padding { padding-left: 30px !important; }
+.quad-left-padding   { padding-left: 40px !important; }
+
+.single-right-padding { padding-right: 10px !important; }
+.double-right-padding { padding-right: 20px !important; }
+.triple-right-padding { padding-right: 30px !important; }
+.quad-right-padding   { padding-right: 40px !important; }
