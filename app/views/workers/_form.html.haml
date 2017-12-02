@@ -1,0 +1,10 @@
+= simple_form_for @worker, html: { class: 'form-horizontal' } do |f|
+  = f.input :first_name
+  = f.input :status, collection: Worker.status.options,
+				                         selected: @worker.status,
+				                         label: 'Status'
+
+  = f.button :submit, class: 'btn btn-default'
+  = link_to 'Cancel', workers_path, class: 'btn btn-default'
+
+.double-bottom-margin

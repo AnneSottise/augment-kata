@@ -1,0 +1,29 @@
+.row.double-bottom-margin
+  .col-xs-12.col-md-6
+    %h1
+      SHIFTS
+
+.row.double-bottom-margin
+  .col-xs-12.col-md-6
+    %p= link_to 'Add a new shift', new_shift_path
+
+.row
+  .col-xs-12.col-md-6
+    %table.table.table-striped
+      %thead
+        %tr
+          %th Start date
+          %th Worker
+          %th Price
+          %th
+        %tbody
+          - @shifts.each do |shift|
+            %tr
+              %td= shift.start_date.strftime('%d/%m/%Y')
+              %td= shift.worker.try(:first_name)
+              %td= number_to_currency(shift.price_cents.fdiv(100), unit: '€')
+              %td
+                = link_to edit_shift_path(shift), class: 'btn btn-default btn-sm' do
+                  %span.fa.fa-edit
+                = link_to shift_path(shift), class: 'btn btn-default btn-sm', method: :delete, data: { confirm: 'Are you sure?' } do
+                  %span.fa.fa-times
