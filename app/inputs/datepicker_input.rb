@@ -13,7 +13,7 @@ class DatepickerInput < SimpleForm::Inputs::Base
   end
 
   def value
-    object.send(attribute_name) if object
+    object.send(attribute_name).try(:strftime, '%Y-%m-%d') if object
   end
 
   def input_html_options
