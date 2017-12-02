@@ -1,7 +1,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require libraries/amoment.min.js
 //= require_tree ./libraries
 //= require_tree .
 
