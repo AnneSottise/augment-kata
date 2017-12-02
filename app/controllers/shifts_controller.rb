@@ -2,7 +2,7 @@ class ShiftsController < ApplicationController
   before_filter :set_shift, except: [:new, :create, :index]
 
   def index
-    @shifts = Shift.all
+    @shifts = Shift.all.map(&:decorate)
   end
 
   def new
@@ -21,6 +21,7 @@ class ShiftsController < ApplicationController
   end
 
   def edit
+    @shift = @shift.decorate
   end
 
   def update

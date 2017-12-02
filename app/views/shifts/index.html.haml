@@ -19,9 +19,9 @@
         %tbody
           - @shifts.each do |shift|
             %tr
-              %td= shift.start_date.strftime('%Y-%m-%d')
-              %td= shift.worker.try(:first_name)
-              %td= number_to_currency(shift.price_cents.fdiv(100), unit: '€')
+              %td= shift.formatted_start_date
+              %td= shift.worker_name
+              %td= shift.formatted_price_cents
               %td
                 = link_to edit_shift_path(shift), class: 'btn btn-default btn-sm' do
                   %span.fa.fa-edit
