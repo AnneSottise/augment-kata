@@ -1,0 +1,14 @@
+.row.single-top-margin.hidden-xs-down
+  .col-xs-12
+    %nav.navbar.navbar-light.bg-faded
+      = link_to 'ShiftManager', root_path, class: 'navbar-brand'
+
+      %ul.nav.navbar-nav
+        %li.nav-item
+          = link_to workers_path, class: 'nav-link' do
+            Workers
+            %i.fa.fa-group
+        %li.nav-item
+          = link_to shifts_path, class: 'nav-link' do
+            Shifts
+            %i.fa.fa-calendar
