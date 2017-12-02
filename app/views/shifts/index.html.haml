@@ -19,7 +19,7 @@
         %tbody
           - @shifts.each do |shift|
             %tr
-              %td= shift.start_date.strftime('%d/%m/%Y')
+              %td= shift.start_date.strftime('%Y-%m-%d')
               %td= shift.worker.try(:first_name)
               %td= number_to_currency(shift.price_cents.fdiv(100), unit: '€')
               %td
