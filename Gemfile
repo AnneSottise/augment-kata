@@ -8,6 +8,7 @@ gem 'simple_form'   # Better forms
 gem 'enumerize'     # Attr hard listing
 gem 'sass-rails'    # Sexy CSS
 gem 'jquery-rails'  # jQuery for Rails
+gem 'uglifier'
 gem 'business_time' # Knowing when a date is a business day or not
 
 group :production do
